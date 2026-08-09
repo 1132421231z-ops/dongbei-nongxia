@@ -1,0 +1,8 @@
+# 依赖与开发产物(不部署)
+node_modules/
+shots/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db

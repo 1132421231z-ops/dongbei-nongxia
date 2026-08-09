@@ -1,0 +1,13 @@
+{
+  "envId": "你的环境ID（在 cloudbaserc.json 里把这一行替换成你的环境 ID）",
+  "framework": {
+    "name": "website",
+    "description": "东北农虾品牌网站 · 静态托管",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-website",
+        "outputDir": "."
+      }
+    }
+  }
+}

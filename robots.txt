@@ -5,4 +5,4 @@ Allow: /
 # 禁止收录截图等内部目录
 Disallow: /shots/
 
-Sitemap: __BASE__sitemap.xml
+Sitemap: https://1132421231z-ops.github.io/dongbei-nongxia/sitemap.xml

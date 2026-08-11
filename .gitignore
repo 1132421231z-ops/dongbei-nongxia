@@ -1,7 +1,11 @@
 # 依赖与开发产物(不部署)
 node_modules/
 shots/
+tools/
 *.log
+
+# 开发预览页(不部署)
+test-gifts.html
 
 # 系统文件
 .DS_Store

@@ -627,10 +627,10 @@ h1, h2, h3, h4 {
 .pack-card__media {
   border-radius: var(--r-md);
   overflow: hidden;
-  background: #ffffff;
+  background: linear-gradient(160deg, #fff8ee 0%, #ffefd6 40%, #ffe4c2 100%);
   aspect-ratio: 1/1;
   position: relative;
-  box-shadow: inset 0 0 0 1px rgba(240, 100, 24, 0.10);
+  box-shadow: inset 0 0 0 1px rgba(240, 100, 24, 0.08);
 }
 .pack-card__media img {
   width: 100%;
@@ -639,13 +639,6 @@ h1, h2, h3, h4 {
   transition: transform .5s ease;
   position: relative;
   z-index: 1;
-  mix-blend-mode: multiply;
-  filter: brightness(1.04) contrast(1.03);
-}
-/* 透明PNG不需要multiply（如gift-festival.png）——通过类名控制 */
-.pack-card__media.img--native img {
-  mix-blend-mode: normal;
-  filter: none;
 }
 .pack-card__media::after {
   content: "";

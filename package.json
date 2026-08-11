@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
     "jimp": "^1.6.1",
     "playwright-core": "^1.62.1"
   }

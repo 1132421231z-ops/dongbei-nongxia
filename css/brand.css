@@ -627,9 +627,10 @@ h1, h2, h3, h4 {
 .pack-card__media {
   border-radius: var(--r-md);
   overflow: hidden;
-  background: radial-gradient(ellipse at center, #fff8ee 0%, #fde4c2 75%, #f5d4a0 100%);
+  background: #ffffff;
   aspect-ratio: 1/1;
   position: relative;
+  box-shadow: inset 0 0 0 1px rgba(240, 100, 24, 0.10);
 }
 .pack-card__media img {
   width: 100%;
@@ -638,12 +639,19 @@ h1, h2, h3, h4 {
   transition: transform .5s ease;
   position: relative;
   z-index: 1;
+  mix-blend-mode: multiply;
+  filter: brightness(1.04) contrast(1.03);
+}
+/* 透明PNG不需要multiply（如gift-festival.png）——通过类名控制 */
+.pack-card__media.img--native img {
+  mix-blend-mode: normal;
+  filter: none;
 }
 .pack-card__media::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 35%, transparent 55%, rgba(240, 100, 24, 0.06) 100%);
+  background: radial-gradient(ellipse at 50% 35%, transparent 60%, rgba(240, 100, 24, 0.04) 100%);
   pointer-events: none;
   z-index: 2;
 }
@@ -758,7 +766,7 @@ table.brand td:first-child { font-weight: 700; color: var(--bark); }
 table.brand .hl { color: var(--sun-deep); font-weight: 800; }
 
 /* ---------- 报价/套餐 ---------- */
-.plan-card { padding: 34px 28px; position: relative; }
+.plan-card { padding: 34px 28px; position: relative; overflow: visible; }
 .plan-card--hot { border: 2px solid var(--sun); box-shadow: var(--shadow-md); }
 .plan-card--hot::after {
   content: "推荐";
@@ -827,10 +835,14 @@ table.brand .hl { color: var(--sun-deep); font-weight: 800; }
 }
 .channel-hero__bg { position: absolute; inset: 0; background: var(--grad-sunrise-soft); }
 .channel-hero__bg img {
-  width: 100%; height: 100%; object-fit: cover; opacity: 0.42;
+  width: 100%; height: 100%; object-fit: cover; opacity: 0.48;
   mix-blend-mode: multiply;
-  mask-image: linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.4) 70%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.4) 70%, transparent);
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.35) 70%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.35) 70%, transparent);
+}
+.channel-hero .section-title,
+.channel-hero .lead {
+  text-shadow: 0 1px 8px rgba(255,247,236,.85);
 }
 .channel-hero__content { position: relative; z-index: 2; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
 @media (max-width: 900px) { .channel-hero__content { grid-template-columns: 1fr; } }

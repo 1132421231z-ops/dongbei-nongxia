@@ -1,5 +1,5 @@
 {
-  "envId": "你的环境ID（在 cloudbaserc.json 里把这一行替换成你的环境 ID）",
+  "envId": "cloud1-d5g3lzwbg121906c2",
   "framework": {
     "name": "website",
     "description": "东北农虾品牌网站 · 静态托管",

@@ -61,9 +61,9 @@
             '<h4>联系我们</h4>' +
             '<ul class="footer__contact">' +
               '<li>项目团队:虾路相逢 · 东北农业大学</li>' +
-              '<li>客服热线:400-XXX-XXXX <em style="font-style:normal;opacity:.6">(计划书定稿后替换)</em></li>' +
+              '<li>客服热线:18346072776</li>' +
               '<li>官方公众号 / 小程序:东北农虾</li>' +
-              '<li>商务合作邮箱:cooperation@dbnx.example</li>' +
+              '<li>商务合作邮箱:dbnx2026@163.com</li>' +
             '</ul>' +
           '</div>' +
         '</div>' +
@@ -129,37 +129,7 @@
     revealEls.forEach(function (el) { el.classList.add('in') })
   }, 3200)
 
-  // 数字滚动
-  var counters = document.querySelectorAll('[data-count]')
-  function animateCount (el) {
-    var target = parseFloat(el.getAttribute('data-count'))
-    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10)
-    var suffix = el.getAttribute('data-suffix') || ''
-    var duration = 1400
-    var start = null
-    function tick (ts) {
-      if (!start) start = ts
-      var p = Math.min((ts - start) / duration, 1)
-      var eased = 1 - Math.pow(1 - p, 3)
-      var val = target * eased
-      el.textContent = val.toFixed(decimals) + suffix
-      if (p < 1) requestAnimationFrame(tick)
-      else el.textContent = (target % 1 === 0 ? target.toLocaleString('zh-CN') : target.toFixed(decimals)) + suffix
-    }
-    requestAnimationFrame(tick)
-  }
-  if ('IntersectionObserver' in window && counters.length) {
-    var cio = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { animateCount(e.target); cio.unobserve(e.target) }
-      })
-    }, { threshold: 0.4 })
-    counters.forEach(function (el) { cio.observe(el) })
-  } else {
-    counters.forEach(function (el) {
-      el.textContent = parseFloat(el.getAttribute('data-count')).toLocaleString('zh-CN') + (el.getAttribute('data-suffix') || '')
-    })
-  }
+  // 数字滚动动画已移除（对应 stats 区的 data-count 元素已删除）
 
   // 平滑锚点(仅同页)
   document.addEventListener('click', function (e) {

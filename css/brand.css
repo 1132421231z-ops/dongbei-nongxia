@@ -199,7 +199,7 @@ h1, h2, h3, h4 {
 .btn--sun { background: var(--grad-sunrise); color: #fff; box-shadow: var(--shadow-sun); }
 .btn--sun:hover { transform: translateY(-3px); box-shadow: 0 16px 38px rgba(240, 100, 24, .42); }
 
-.btn--ghost { background: transparent; color: var(--bark); border: 2px solid rgba(58, 36, 23, 0.5); }
+.btn--ghost { background: transparent; color: var(--bark); border: 2px solid rgba(58, 36, 23, 0.42); }
 .btn--ghost:hover { border-color: var(--sun); color: var(--sun-deep); transform: translateY(-3px); }
 
 .btn--white { background: #fff; color: var(--sun-deep); box-shadow: var(--shadow-md); }
@@ -427,6 +427,7 @@ h1, h2, h3, h4 {
   gap: 10px;
   font-family: var(--font-kai);
   font-size: 17px;
+  font-weight: 600;
   letter-spacing: 5px;
   color: #c43e00;
   background: rgba(255, 255, 255, 0.82);

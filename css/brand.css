@@ -858,7 +858,14 @@ table.brand .hl { color: var(--sun-deep); font-weight: 800; }
   overflow: hidden;
   background: var(--grad-sunrise);
 }
-.banner-strip img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; mix-blend-mode: multiply; }
+.banner-strip img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: multiply; }
+.banner-strip::after {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(112,42,8,.5) 0%, rgba(142,62,14,.42) 50%, rgba(96,34,6,.55) 100%);
+}
 .banner-strip__content { position: relative; z-index: 2; }
 
 /* ---------- Logo 带 ---------- */

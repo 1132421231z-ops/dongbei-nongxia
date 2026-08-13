@@ -2,7 +2,7 @@
   "envId": "cloud1-d5g3lzwbg121906c2",
   "framework": {
     "name": "website",
-    "description": "东北农虾品牌网站 · 静态托管",
+    "description": "寒塘鲜虾品牌网站 · 静态托管",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-website",

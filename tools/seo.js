@@ -34,11 +34,11 @@ if (SET_URL) {
 const ORG = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: '东北农虾',
+  name: '寒塘鲜虾',
   url: BASE_KEY,
   logo: BASE_KEY + 'assets/logo.png',
   slogan: '冰泉养·鲜弹甜',
-  description: '依托东北农业大学寒地小龙虾育种技术,冰泉养·鲜弹甜的即热即食速食小龙虾品牌,线上电商、实体商超、餐饮供货三大渠道全域运营。',
+  description: '依托寒地小龙虾育种技术,冰泉养·鲜弹甜的即热即食速食小龙虾品牌,线上电商、实体商超、餐饮供货三大渠道全域运营。',
   foundingLocation: '哈尔滨',
   areaServed: '中国',
 };
@@ -53,24 +53,24 @@ function ld(...objs) {
 }
 
 const KEYWORDS = {
-  index: '东北农虾,寒地小龙虾,稻田小龙虾,即食小龙虾,哈尔滨小龙虾,速食小龙虾,小龙虾品牌,小龙虾电商',
-  online: '东北农虾线上销售,小龙虾电商,小龙虾小程序,即食小龙虾网购,小龙虾冷链配送,抖音小龙虾,小龙虾送货上门',
-  supermarket: '东北农虾实体店,小龙虾超市,校园小龙虾,自提冷柜,即食小龙虾零售,小龙虾食堂,小龙虾专柜',
+  index: '寒塘鲜虾,寒地小龙虾,稻田小龙虾,即食小龙虾,哈尔滨小龙虾,速食小龙虾,小龙虾品牌,小龙虾电商',
+  online: '寒塘鲜虾线上销售,小龙虾电商,小龙虾小程序,即食小龙虾网购,小龙虾冷链配送,抖音小龙虾,小龙虾送货上门',
+  supermarket: '寒塘鲜虾实体店,小龙虾超市,校园小龙虾,自提冷柜,即食小龙虾零售,小龙虾食堂,小龙虾专柜',
   restaurant: '小龙虾B端供应,小龙虾供应链,小龙虾批发,餐饮小龙虾,夜宵小龙虾,预制小龙虾,小龙虾餐饮供货',
   product: '寒地小龙虾,东北小龙虾,稻田小龙虾,即食小龙虾,麻辣小龙虾,蒜蓉小龙虾,十三香小龙虾,贡菜小龙虾,小龙虾礼盒,小龙虾价格',
   cooperation: '小龙虾养殖合作,寒地小龙虾养殖,稻田养虾,小龙虾苗种,小龙虾养殖技术,稻虾共养,小龙虾订单回收',
-  service: '小龙虾售后,即食小龙虾保存,小龙虾加热方法,小龙虾退换货,东北农虾客服',
+  service: '小龙虾售后,即食小龙虾保存,小龙虾加热方法,小龙虾退换货,寒塘鲜虾客服',
 };
 
 // 每个页面的配置:name(中文名)、img(代表图)、desc(og/tw 描述,缺省取 meta description)
 const PAGES = {
-  index:        { name: '东北农虾 · 寒地稻田小龙虾', img: 'assets/hero-banner.jpg' },
-  online:       { name: '线上销售 · 东北农虾', img: 'assets/dish-1.jpg' },
-  supermarket:  { name: '实体商超 · 东北农虾', img: 'assets/giftbox-3d.jpg' },
-  restaurant:   { name: '餐饮供货 · 东北农虾', img: 'assets/base.jpg' },
-  product:      { name: '产品介绍 · 东北农虾', img: 'assets/dish-1.jpg' },
-  cooperation:  { name: '养殖合作 · 东北农虾', img: 'assets/paddy-banner.jpg' },
-  service:      { name: '售后服务 · 东北农虾', img: 'assets/logo.png' },
+  index:        { name: '寒塘鲜虾 · 寒地稻田小龙虾', img: 'assets/hero-banner.jpg' },
+  online:       { name: '线上销售 · 寒塘鲜虾', img: 'assets/dish-1.jpg' },
+  supermarket:  { name: '实体商超 · 寒塘鲜虾', img: 'assets/giftbox-3d.jpg' },
+  restaurant:   { name: '餐饮供货 · 寒塘鲜虾', img: 'assets/base.jpg' },
+  product:      { name: '产品介绍 · 寒塘鲜虾', img: 'assets/dish-1.jpg' },
+  cooperation:  { name: '养殖合作 · 寒塘鲜虾', img: 'assets/paddy-banner.jpg' },
+  service:      { name: '售后服务 · 寒塘鲜虾', img: 'assets/logo.png' },
 };
 
 function breadcrumb(name, url) {
@@ -78,7 +78,7 @@ function breadcrumb(name, url) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '东北农虾', item: BASE_KEY },
+      { '@type': 'ListItem', position: 1, name: '寒塘鲜虾', item: BASE_KEY },
       { '@type': 'ListItem', position: 2, name: name.replace(/^.*?·\s*/, ''), item: url },
     ],
   };
@@ -97,11 +97,11 @@ const PRODUCTS = [
 const PRODUCT_LIST = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: '东北农虾产品系列',
+  name: '寒塘鲜虾产品系列',
   itemListElement: PRODUCTS.map((p, i) => ({
     '@type': 'Product',
     name: p.name,
-    brand: { '@type': 'Brand', name: '东北农虾' },
+    brand: { '@type': 'Brand', name: '寒塘鲜虾' },
     offers: { '@type': 'Offer', price: p.price, priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
   })),
 };
@@ -109,7 +109,7 @@ const PRODUCT_LIST = {
 const WEBSITE = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: '东北农虾',
+  name: '寒塘鲜虾',
   url: BASE_KEY,
   inLanguage: 'zh-CN',
 };
@@ -129,7 +129,7 @@ for (const [name, cfg] of Object.entries(PAGES)) {
     '<meta name="keywords" content="' + KEYWORDS[name] + '">',
     '<meta name="robots" content="index,follow">',
     '<link rel="canonical" href="' + url + '">',
-    '<meta property="og:site_name" content="东北农虾">',
+    '<meta property="og:site_name" content="寒塘鲜虾">',
     '<meta property="og:type" content="website">',
     '<meta property="og:locale" content="zh_CN">',
     '<meta property="og:title" content="' + cfg.name + '">',

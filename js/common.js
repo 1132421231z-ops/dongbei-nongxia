@@ -1,4 +1,4 @@
-/* 东北农虾品牌站 · 公共脚本:导航/页脚注入 + 交互 */
+/* 寒塘鲜虾品牌站 · 公共脚本:导航/页脚注入 + 交互 */
 (function () {
   'use strict'
 
@@ -7,10 +7,10 @@
   var NAV_HTML =
     '<header class="nav" data-role="nav">' +
       '<div class="nav__inner container">' +
-        '<a class="brand" href="index.html" aria-label="东北农虾首页">' +
-          '<span class="brand__logo"><img src="assets/logo.png" alt="东北农虾 Logo"></span>' +
-          '<span><span class="brand__name">东北<em>农虾</em></span>' +
-          '<span class="brand__tag">寒地稻田 · 高校科技</span></span>' +
+        '<a class="brand" href="index.html" aria-label="寒塘鲜虾首页">' +
+          '<span class="brand__logo"><img src="assets/logo.png" alt="寒塘鲜虾 Logo"></span>' +
+          '<span><span class="brand__name">寒塘<em>鲜虾</em></span>' +
+          '<span class="brand__tag">寒地稻田 · 生态科技</span></span>' +
         '</a>' +
         '<nav class="nav__links" id="navLinks" aria-label="主导航">' +
           '<a href="index.html" data-nav-key="index">首页</a>' +
@@ -34,11 +34,11 @@
         '<div class="footer__grid">' +
           '<div class="footer__brand">' +
             '<a class="brand" href="index.html">' +
-              '<span class="brand__logo"><img src="assets/logo.png" alt="东北农虾 Logo"></span>' +
-              '<span><span class="brand__name">东北<em>农虾</em></span>' +
-              '<span class="brand__tag">寒地稻田 · 高校科技</span></span>' +
+              '<span class="brand__logo"><img src="assets/logo.png" alt="寒塘鲜虾 Logo"></span>' +
+              '<span><span class="brand__name">寒塘<em>鲜虾</em></span>' +
+              '<span class="brand__tag">寒地稻田 · 生态科技</span></span>' +
             '</a>' +
-            '<p style="margin-top:16px">依托东北农业大学"寒地小龙虾抱仔苗小规格苗种培育技术",以线上电商、校园渠道与 B 端供货全域运营,打造高品质、高性价比的东北本土速食龙虾品牌。</p>' +
+            '<p style="margin-top:16px">依托"寒地小龙虾抱仔苗小规格苗种培育技术",以线上电商、校园渠道与 B 端供货全域运营,打造高品质、高性价比的东北本土速食龙虾品牌。</p>' +
             '<div class="footer__slogan">冰泉养 · 鲜弹甜</div>' +
           '</div>' +
           '<div>' +
@@ -60,16 +60,16 @@
           '<div>' +
             '<h4>联系我们</h4>' +
             '<ul class="footer__contact">' +
-              '<li>项目团队:虾路相逢 · 东北农业大学</li>' +
+              '<li>项目团队:寒塘鲜虾</li>' +
               '<li>客服热线:18346072776</li>' +
-              '<li>官方公众号 / 小程序:东北农虾</li>' +
+              '<li>官方公众号 / 小程序:寒塘鲜虾</li>' +
               '<li>商务合作邮箱:dbnx2026@163.com</li>' +
             '</ul>' +
           '</div>' +
         '</div>' +
         '<div class="footer__bottom">' +
-          '<span>© 2026 东北农虾 · 虾路相逢团队 · 第十五届"挑战杯"东北专项 —— 寒地龙虾商品化运营与推广</span>' +
-          '<span>高校科技 × 寒地稻田</span>' +
+          '<span>© 2026 寒塘鲜虾 —— 寒地龙虾商品化运营与推广</span>' +
+          '<span>生态科技 × 寒地稻田</span>' +
         '</div>' +
       '</div>' +
     '</footer>'
